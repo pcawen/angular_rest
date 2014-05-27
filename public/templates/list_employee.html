@@ -1,0 +1,13 @@
+Empleados!
+<div class="success" ng-show="removeSuccess">Empleado eliminado exitosamente</div>
+<table>
+	<tr>
+		<th>Id</th><th>Nombre</th><th>Salario</th>
+	</tr>
+	<tr ng-repeat="empleado in empleados">
+		<td>{{empleado.id}}</td><td>{{empleado.name}}</td><td>{{empleado.salary}}</td><td><a href="#/edit/{{empleado.id}}" ng-click="select(empleado)">Ver</a></td>
+	</tr>
+</table>
+<div class="buttons">
+	<a class="mainbutton" href="#/addEmployee">Crear empleado</a>
+</div>

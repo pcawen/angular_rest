@@ -1,0 +1,57 @@
+body{
+	background-color: #EEEEEE;
+	width: 500px;
+	margin: auto;
+	color: #555555;
+}
+
+a{
+	text-decoration: none;
+}
+
+tr:nth-child(odd){
+	background-color:#eee; 
+}
+tr:nth-child(even){
+	background-color:#fff; 
+}
+
+.buttons{
+	margin-top: 15px;
+}
+
+.editFrm{
+	margin: 0 auto;
+    position:relative;
+    width:300px;
+}
+.editFrm label {
+    width: 100px;
+    float: left;
+}
+
+.error{
+	background-color: #FFAAAA;
+}
+
+.success{
+	background-color: #AAFFAA;
+}
+
+.main{
+	background-color: #EEEEEE;
+}
+
+.mainbutton {
+    text-decoration: none; font: menu;
+    display: inline-block; padding: 2px 8px;
+    /*background: ButtonFace; color: ButtonText;*/
+    background-color: #5555FF;
+    border-style: solid; border-width: 2px;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+    color: #EEEEEE;
+}
+.mainbutton:active {
+    border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}
+

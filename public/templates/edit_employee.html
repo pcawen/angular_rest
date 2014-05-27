@@ -1,0 +1,20 @@
+<div class="editFrm">
+<form name="editForm">
+<div>
+	<div class="error" ng-show="editForm.name.$error.required && !editForm.name.$pristine" class="help-inline">
+        Nombre del empleado es requerido</div><br>
+    <div class="error" ng-show="editForm.salary.$error.required && !editForm.salary.$pristine" class="help-inline">Salario del empleado es requerido</div>
+    <div class="success" ng-show="addSuccess">Empleado agregado exitosamente</div>
+    <div class="success" ng-show="editSuccess">Empleado modificado exitosamente</div>
+
+	<br><label for="empId">Id: </label><input id="empId" type="text" ng-model="empleado.id" disabled /></br>
+	<br><label for="empName">Nombre: </label><input id="empName" name="name" type="text" ng-model="empleado.name" required/></br>
+	<br><label for="empSalary">Salario: </label><input id="empSalary" name="salary" type="text" ng-model="empleado.salary" required/></br>
+</div>
+<div class="buttons">
+	<button ng-click="save()" ng-disabled="editForm.$invalid" class="btn btn-primary">Guardar</button>
+	<button ng-click="remove()" ng-disabled="editForm.$invalid">Eliminar</button>
+	<a href="/">Volver</a>
+</div>
+</form>
+</div>
