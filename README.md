@@ -6,7 +6,7 @@ This app consume a REST API, the same as the project "employee-rest-api"
 
 Configuration
 
-```#npm install -l
+    #npm install -l
 
 Start the server
-```#node app.js
+    #node app.js
